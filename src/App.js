@@ -5,11 +5,14 @@ import About from './components/About'
 import Contact from './components/Contact'
 import Projects from './components/Projects'
 import Resume from './components/Resume'
-import "./App.css";
+import "./index.css";
+import "./App.css"
 
 function App() {
   return (
-    
+    <div className="App">
+    <div className="bg"></div>
+
     <HashRouter basename='/'>
       <Routes>
           <Route path="/" element={<Navbar />}>
@@ -21,6 +24,7 @@ function App() {
         </Route>
       </Routes>
     </HashRouter>
+    </div>
   );
 }
 
